@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendarz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Kontakt</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Miesiące
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#styczen">Styczeń</a>
+                <a href="#luty">Luty</a>
+                <a href="#marzec">Marzec</a>
+                <a href="#kwiecien">Kwiecień</a>
+                <a href="#maj">Maj</a>
+                <a href="#czerwiec">Czerwiec</a>
+                <a href="#lipiec">Lipiec</a>
+                <a href="#sierpien">Sierpień</a>
+                <a href="#wrzesien">Wrzesień</a>
+                <a href="#pazdziernik">Październik</a>
+                <a href="#listopad">Listopad</a>
+                <a href="#grudzien">Grudzień</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">KALENDARZ</h1>
+        
+        <div class="calendar-grid">
+            
+            <div class="month-card" id="styczen">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/black-french-bulldog-960x636.jpg" alt="Styczeń">
+                    <h2>Styczeń</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="weekend">6</td><td class="weekend">7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="weekend">13</td><td class="weekend">14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="weekend">20</td><td class="weekend">21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="weekend">27</td><td class="weekend">28</td></tr>
+                    <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="luty">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/estrela-mountain-dog-960x636.jpg" alt="Luty">
+                    <h2>Luty</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td>1</td><td>2</td><td class="weekend">3</td><td class="weekend">4</td></tr>
+                    <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="weekend">10</td><td class="weekend">11</td></tr>
+                    <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="weekend">17</td><td class="weekend">18</td></tr>
+                    <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="weekend">24</td><td class="weekend">25</td></tr>
+                    <tr><td>26</td><td>27</td><td>28</td><td>29</td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="marzec">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/australian-shepherd-resting-on-a-tree-960x641.jpg" alt="Marzec">
+                    <h2>Marzec</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td></td><td>1</td><td class="weekend">2</td><td class="weekend">3</td></tr>
+                    <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="weekend">9</td><td class="weekend">10</td></tr>
+                    <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="weekend">16</td><td class="weekend">17</td></tr>
+                    <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="weekend">23</td><td class="weekend">24</td></tr>
+                    <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="weekend">30</td><td class="weekend">31</td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="kwiecien">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/italian-greyhound-960x636.jpg" alt="Kwiecień">
+                    <h2>Kwiecień</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="weekend">6</td><td class="weekend">7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="weekend">13</td><td class="weekend">14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="weekend">20</td><td class="weekend">21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="weekend">27</td><td class="weekend">28</td></tr>
+                    <tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="maj">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/english-greyhound-960x636.jpg" alt="Maj">
+                    <h2>Maj</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td class="weekend">4</td><td class="weekend">5</td></tr>
+                    <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="weekend">11</td><td class="weekend">12</td></tr>
+                    <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="weekend">18</td><td class="weekend">19</td></tr>
+                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="weekend">25</td><td class="weekend">26</td></tr>
+                    <tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="czerwiec">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/whippet-in-nature-960x641.jpg" alt="Czerwiec">
+                    <h2>Czerwiec</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td class="weekend">1</td><td class="weekend">2</td></tr>
+                    <tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td class="weekend">8</td><td class="weekend">9</td></tr>
+                    <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td class="weekend">15</td><td class="weekend">16</td></tr>
+                    <tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td class="weekend">22</td><td class="weekend">23</td></tr>
+                    <tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td class="weekend">29</td><td class="weekend">30</td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="lipiec">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/anatolian-shepherd-960x641.jpg" alt="Lipiec">
+                    <h2>Lipiec</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="weekend">6</td><td class="weekend">7</td></tr>
+                    <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="weekend">13</td><td class="weekend">14</td></tr>
+                    <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="weekend">20</td><td class="weekend">21</td></tr>
+                    <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="weekend">27</td><td class="weekend">28</td></tr>
+                    <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="sierpien">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/small-fawn-pug-puppy-960x636.jpg" alt="Sierpień">
+                    <h2>Sierpień</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td>1</td><td>2</td><td class="weekend">3</td><td class="weekend">4</td></tr>
+                    <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="weekend">10</td><td class="weekend">11</td></tr>
+                    <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td class="weekend">17</td><td class="weekend">18</td></tr>
+                    <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="weekend">24</td><td class="weekend">25</td></tr>
+                    <tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="wrzesien">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/brown-pitbull-lying-in-autumn-leaves-960x641.jpg" alt="Wrzesień">
+                    <h2>Wrzesień</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td class="weekend">1</td><td class="weekend">2</td></tr>
+                    <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="weekend">7</td><td class="weekend">8</td></tr>
+                    <tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="weekend">14</td><td class="weekend">15</td></tr>
+                    <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="weekend">21</td><td class="weekend">22</td></tr>
+                    <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="weekend">28</td><td class="weekend">29</td></tr>
+                    <tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="pazdziernik">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/Brazilian-Terrier-960x636.jpg" alt="Październik">
+                    <h2>Październik</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="weekend">5</td><td class="weekend">6</td></tr>
+                    <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td class="weekend">12</td><td class="weekend">13</td></tr>
+                    <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="weekend">19</td><td class="weekend">20</td></tr>
+                    <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="weekend">26</td><td class="weekend">27</td></tr>
+                    <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="listopad">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/Parson-Russell-Terrier-960x636.jpg" alt="Listopad">
+                    <h2>Listopad</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td></td><td>1</td><td class="weekend">2</td><td class="weekend">3</td></tr>
+                    <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="weekend">9</td><td class="weekend">10</td></tr>
+                    <tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td class="weekend">16</td><td class="weekend">17</td></tr>
+                    <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td class="weekend">23</td><td class="weekend">24</td></tr>
+                    <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="weekend">30</td><td></td></tr>
+                </table>
+            </div>
+
+            <div class="month-card" id="grudzien">
+                <div class="card-header">
+                    <img src="https://www.pupvine.com/wp-content/uploads/2022/10/africanis-dog-960x636.jpg" alt="Grudzień">
+                    <h2>Grudzień</h2>
+                </div>
+                <table>
+                    <tr><th>Pon</th><th>Wt</th><th>Śr</th><th>Czw</th><th>Pt</th><th>Sob</th><th>Nie</th></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class="weekend">1</td></tr>
+                    <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="weekend">7</td><td class="weekend">8</td></tr>
+                    <tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="weekend">14</td><td class="weekend">15</td></tr>
+                    <tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="weekend">21</td><td class="weekend">22</td></tr>
+                    <tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="weekend">28</td><td class="weekend">29</td></tr>
+                    <tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+
+        </div> </div> <script src="./menu.js"></script>
+</body>
+</html>
